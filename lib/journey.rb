@@ -2,6 +2,8 @@ class Journey
 
   attr_reader :entry_station, :complete, :exit_station
 
+  MINIMUM_FARE = 1
+
   def initialize(entry_station)
     @entry_station = entry_station
     @complete = false
@@ -14,6 +16,10 @@ class Journey
 
   def complete?
     @complete
+  end
+
+  def fare
+    MINIMUM_FARE
   end
 
 end
