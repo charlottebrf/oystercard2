@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Applications/Projects/MakersWeek2/oystercard2/oystercard/spec/feature_spec.rb": [
+      "/Users/kavitak/makers_academy/oystercard2/spec/feature_spec.rb": [
         null,
         null,
         null,
@@ -11,7 +11,7 @@
         null,
         null
       ],
-      "/Applications/Projects/MakersWeek2/oystercard2/oystercard/spec/journey_spec.rb": [
+      "/Users/kavitak/makers_academy/oystercard2/spec/journey_spec.rb": [
         1,
         null,
         1,
@@ -49,7 +49,7 @@
         null,
         null
       ],
-      "/Applications/Projects/MakersWeek2/oystercard2/oystercard/lib/journey.rb": [
+      "/Users/kavitak/makers_academy/oystercard2/lib/journey.rb": [
         1,
         null,
         1,
@@ -85,20 +85,15 @@
         null,
         null
       ],
-      "/Applications/Projects/MakersWeek2/oystercard2/oystercard/spec/oystercard_spec.rb": [
+      "/Users/kavitak/makers_academy/oystercard2/spec/oystercard_spec.rb": [
         1,
         null,
         1,
-        22,
-        11,
-        8,
+        9,
+        6,
+        9,
+        7,
         1,
-        null,
-        2,
-        2,
-        2,
-        2,
-        2,
         null,
         null,
         1,
@@ -117,24 +112,7 @@
         2,
         null,
         null,
-        1,
-        1,
-        1,
         null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
         1,
         1,
         1,
@@ -150,7 +128,6 @@
         1,
         1,
         1,
-        1,
         null,
         null,
         null,
@@ -158,7 +135,6 @@
         1,
         1,
         null,
-        1,
         1,
         1,
         4,
@@ -167,9 +143,7 @@
         1,
         1,
         1,
-        1,
         null,
-        1,
         1,
         1,
         1,
@@ -180,7 +154,6 @@
         1,
         1,
         null,
-        1,
         1,
         1,
         1,
@@ -189,7 +162,7 @@
         null,
         null
       ],
-      "/Applications/Projects/MakersWeek2/oystercard2/oystercard/lib/oystercard.rb": [
+      "/Users/kavitak/makers_academy/oystercard2/lib/oystercard.rb": [
         1,
         null,
         1,
@@ -198,30 +171,24 @@
         1,
         null,
         1,
-        21,
-        21,
-        21,
+        13,
+        13,
         null,
         null,
         1,
-        12,
-        11,
+        4,
+        3,
         null,
         null,
         1,
-        10,
         8,
-        8,
+        6,
         null,
         null,
         1,
-        2,
-        null,
-        null,
-        1,
-        7,
-        7,
-        7,
+        6,
+        6,
+        6,
         null,
         null,
         1,
@@ -231,12 +198,12 @@
         1,
         null,
         1,
-        7,
+        6,
         null,
         null,
         null
       ],
-      "/Applications/Projects/MakersWeek2/oystercard2/oystercard/spec/station_spec.rb": [
+      "/Users/kavitak/makers_academy/oystercard2/spec/station_spec.rb": [
         1,
         null,
         1,
@@ -252,7 +219,7 @@
         null,
         null
       ],
-      "/Applications/Projects/MakersWeek2/oystercard2/oystercard/lib/station.rb": [
+      "/Users/kavitak/makers_academy/oystercard2/lib/station.rb": [
         1,
         1,
         null,
@@ -263,6 +230,6 @@
         null
       ]
     },
-    "timestamp": 1495035142
+    "timestamp": 1495036748
   }
 }
