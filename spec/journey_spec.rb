@@ -12,10 +12,12 @@ describe Journey do
     expect(subject.entry_station).to eq "Fulham"
   end
   it 'should end' do
-    expect(subject.finish(exit_station)).to eq exit_station
+    subject.finish(exit_station)
+    expect(subject.exit_station).to eq exit_station
   end
   it 'should be able to complete the journey' do
     subject.finish(exit_station)
     expect(subject).to be_complete
   end
+
 end
