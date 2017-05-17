@@ -23,8 +23,14 @@ describe Journey do
     expect(subject.fare).to eq Journey::MINIMUM_FARE
   end
 
-  it 'should return penalty fare if not touched out' do
+  it 'should return penalty fare if no exit station' do
     expect(subject.fare).to eq 6
+  end
+
+  it 'should return penalty fare if no entry station' do
+    journey = Journey.new
+    journey.finish(exit_station)
+    expect(journey.fare).to eq 6
   end
 
 end

@@ -5,7 +5,7 @@ class Journey
   MINIMUM_FARE = 1
   PENALTY_FARE = 6
 
-  def initialize(entry_station)
+  def initialize(entry_station = nil)
     @entry_station = entry_station
     @complete = false
   end
@@ -27,7 +27,8 @@ class Journey
   private
 
   def penalty?
-    exit_station == nil
+    exit_station == nil || entry_station == nil
+
   end
 
 end
