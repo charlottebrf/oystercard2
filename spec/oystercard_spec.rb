@@ -10,7 +10,7 @@ describe Oystercard do
 	it { is_expected.to respond_to(:touch_in).with(1).argument }
 	it { is_expected.to respond_to(:touch_out).with(1).argument }
 	it { is_expected.to respond_to(:entry_station)}
-	
+
 
 	it "instance has default value of 0" do
 		expect(oystercard.balance).to eq(0)
@@ -87,11 +87,15 @@ describe '#touch_out at exit_station ' do
 	end
 end
 
-describe '#journey' do
-	it ' shows that a card has an empty list of journeys' do
+describe '#journeys' do
+	it 'shows that a card has an empty list of journeys' do
 		expect(oystercard.journeys).to be_empty
 	end
-
+	it 'shows completed journeys' do
+		oystercard.top_up 10
+		oystercard.touch_in(entry_station)
+		oystercard.touch_out(exit_station)
+		expect(oystercard.completed_journeys).to eq ([{:entry_station => entry_station, :exit_station => exit_station}])
+	end
 end
-
 end
