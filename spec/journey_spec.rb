@@ -19,7 +19,12 @@ describe Journey do
     expect(subject).to be_complete
   end
   it 'should return the cost of the journey(fare)' do
+    subject.finish(exit_station)
     expect(subject.fare).to eq Journey::MINIMUM_FARE
+  end
+
+  it 'should return penalty fare if not touched out' do
+    expect(subject.fare).to eq 6
   end
 
 end

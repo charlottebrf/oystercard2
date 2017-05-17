@@ -5,6 +5,7 @@ describe Oystercard do
 	let(:entry_station) {double :entry_station}
 	let(:exit_station) {double :exit_station}
 	let(:journey) {{entry_station: entry_station, exit_station: exit_station}}
+
 	it { is_expected.to respond_to(:top_up).with(1).argument }
 	it { is_expected.to respond_to(:in_journey?) }
 	it { is_expected.to respond_to(:touch_in).with(1).argument }
@@ -51,12 +52,12 @@ describe '#touch_in' do
 		expect(oystercard.touch_in(entry_station)).to eq true
 	end
 	it 'Raises an error when balance below £1' do
-		expect{oystercard.touch_in(entry_station)}.to raise_error "Balance too low : Top up Please"
+		expect{ oystercard.touch_in(entry_station) }.to raise_error "Balance too low : Top up Please"
 	end
 	it 'Raises an error when topped up and balance goes below £1' do
 		oystercard.top_up 1
 		oystercard.touch_out(exit_station)
-		expect{oystercard.touch_in(entry_station)}.to raise_error "Balance too low : Top up Please"
+		expect{ oystercard.touch_in(entry_station) }.to raise_error "Balance too low : Top up Please"
 	end
 	it 'Shows us the entry_station last touched in at' do
 		oystercard.top_up 10
