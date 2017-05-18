@@ -1,7 +1,5 @@
 class Journey
 
-  attr_reader
-
   PENALTY_FARE = 6
 
   def initialize
@@ -15,8 +13,14 @@ class Journey
     PENALTY_FARE
   end
 
+  def start(entry_station)
+    raise "You have already touched in" if @journey.include? entry_station
+    @journey << entry_station
+    self
+  end
+
   def finish(exit_station)
-    # exit_station = Station.new("Fulham", 2)
+
     @journey << exit_station
     self
   end

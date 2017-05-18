@@ -15,4 +15,12 @@ describe Journey do
     expect(journey.finish(station)).to eq journey
   end
 
+  it "Allows an entry station to be added" do
+    expect(journey.start(station)).to eq journey
+  end
+
+  it "Will only allow one start station to be added to journey" do
+    journey.start(station)
+    expect {journey.start(station) }.to raise_error "You have already touched in"
+  end
 end
