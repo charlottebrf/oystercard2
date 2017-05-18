@@ -2,35 +2,17 @@ require 'journey'
 
 describe Journey do
 
-  subject{ described_class.new("Fulham") }
-  let(:entry_station) { double(:station) }
-  let(:exit_station) { double(:station) }
-  it { is_expected.to respond_to(:fare) }
+  subject(:journey) { described_class.new }
+  let(:station) { double :station, zone: 1 }
 
-  it 'journey should start' do
-    expect(subject.entry_station).to eq "Fulham"
+  it 'allows journey to start' do
+    expect(journey).not_to be_complete
   end
-  it 'should end' do
-    subject.finish(exit_station)
-    expect(subject.exit_station).to eq exit_station
+  it 'allow for a penalty fare' do
+    expect(journey.fare).to eq Journey::PENALTY_FARE
   end
-  it 'should be able to complete the journey' do
-    subject.finish(exit_station)
-    expect(subject).to be_complete
-  end
-  it 'should return the cost of the journey(fare)' do
-    subject.finish(exit_station)
-    expect(subject.fare).to eq Journey::MINIMUM_FARE
-  end
-
-  it 'should return penalty fare if no exit station' do
-    expect(subject.fare).to eq 6
-  end
-
-  it 'should return penalty fare if no entry station' do
-    journey = Journey.new
-    journey.finish(exit_station)
-    expect(journey.fare).to eq 6
+  it 'returns the journey when exiting' do
+    expect(journey.finish(station)).to eq journey
   end
 
 end
