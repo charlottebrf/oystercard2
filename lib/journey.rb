@@ -14,13 +14,13 @@ class Journey
   end
 
   def start(entry_station)
-    raise "You have already touched in" if @journey.include? entry_station
+    fail "You have already touched in" if @journey.count > 1
     @journey << entry_station
     self
   end
 
   def finish(exit_station)
-
+    fail "You have already touched out" if @journey.count > 1
     @journey << exit_station
     self
   end

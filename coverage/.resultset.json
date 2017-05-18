@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/alexsatur/Desktop/oystercard2/spec/feature_spec.rb": [
+      "/Applications/Projects/MakersWeek2/oystercard2/oystercard2/spec/feature_spec.rb": [
         null,
         null,
         null,
@@ -11,35 +11,42 @@
         null,
         null
       ],
-      "/Users/alexsatur/Desktop/oystercard2/spec/journey_spec.rb": [
+      "/Applications/Projects/MakersWeek2/oystercard2/oystercard2/spec/journey_spec.rb": [
         1,
         null,
         1,
         null,
         6,
-        4,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
         null,
         null,
         1,
         1,
         null,
+        1,
+        1,
         null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
         1,
         1,
         2,
         null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null
       ],
-      "/Users/alexsatur/Desktop/oystercard2/lib/journey.rb": [
+      "/Applications/Projects/MakersWeek2/oystercard2/oystercard2/lib/journey.rb": [
         1,
         null,
         1,
@@ -62,14 +69,14 @@
         null,
         null,
         1,
-        null,
-        1,
-        1,
+        2,
+        2,
+        2,
         null,
         null,
         null
       ],
-      "/Users/alexsatur/Desktop/oystercard2/spec/oystercard_spec.rb": [
+      "/Applications/Projects/MakersWeek2/oystercard2/oystercard2/spec/oystercard_spec.rb": [
         1,
         null,
         1,
@@ -127,7 +134,7 @@
         null,
         null
       ],
-      "/Users/alexsatur/Desktop/oystercard2/lib/oystercard.rb": [
+      "/Applications/Projects/MakersWeek2/oystercard2/oystercard2/lib/oystercard.rb": [
         1,
         null,
         1,
@@ -168,7 +175,7 @@
         null,
         null
       ],
-      "/Users/alexsatur/Desktop/oystercard2/spec/station_spec.rb": [
+      "/Applications/Projects/MakersWeek2/oystercard2/oystercard2/spec/station_spec.rb": [
         1,
         null,
         1,
@@ -184,7 +191,7 @@
         null,
         null
       ],
-      "/Users/alexsatur/Desktop/oystercard2/lib/station.rb": [
+      "/Applications/Projects/MakersWeek2/oystercard2/oystercard2/lib/station.rb": [
         1,
         1,
         null,
@@ -195,6 +202,6 @@
         null
       ]
     },
-    "timestamp": 1495126985
+    "timestamp": 1495128686
   }
 }
