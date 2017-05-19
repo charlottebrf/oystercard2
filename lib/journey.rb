@@ -9,4 +9,12 @@ class Journey
     @exit_station = exit_station
   end
 
+  def started?
+    @entry_station.name != :no_name
+  end
+
+  def ended?
+    @exit_station.name != :no_name
+  end
+
 end
