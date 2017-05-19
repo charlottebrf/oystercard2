@@ -2,32 +2,20 @@ require 'journey'
 
 describe Journey do
 
-  subject(:journey) { described_class.new }
-  # let(:station) { double :station, zone: 1 }
-
-  it 'allows journey to start' do
-    expect(journey).not_to be_complete
-  end
-  it 'allow for a penalty fare' do
-    expect(journey.fare).to eq Journey::PENALTY_FARE
-  end
-  it 'returns the journey when exiting' do
-    expect(journey.finish(:Fulham)).to eq journey
+  it 'is initialized with an entry station' do
+    station = Station.new("Fulham", 2)
+    station2 = Station.new
+    journey = Journey.new(station, station2)
+    expect(journey.entry_station).to eq station
   end
 
-  it "Allows an entry station to be added" do
-    expect(journey.start(:Fulham)).to eq journey
+  it 'is initialized with an exit station' do
+    station = Station.new
+    station2 = Station.new("Brixton", 2)
+    journey = Journey.new(station, station2)
+    expect(journey.exit_station).to eq station2
   end
 
-  it "will only hold 2 stations in journey" do
-    journey.start(:Fulham)
-    journey.finish(:PG)
-    expect { journey.start(:Fulham) }.to raise_error "You have already touched in"
-  end
 
-  # it 'will only allow one exit station to be added to journey' do
-  #   journey.finish(:ParsonsGreen)
-  #   expect { journey.finish(:ParsonsGreen) }.to raise_error "You have already touched out"
-  # end
 
 end
