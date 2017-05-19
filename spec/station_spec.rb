@@ -1,14 +1,22 @@
 require 'station'
 
 describe Station do
-  subject{ described_class.new("Fulham", 2) }
+  subject(:station) { described_class.new }
+  subject(:station2) { described_class.new :ParsonsGreen, 2}
 
-
-  it 'should have a name' do
-    expect(subject.name).to eq "Fulham"
+  it 'gives a default of no_name if given no station name' do
+    expect(station.name).to eq :no_name
   end
 
-  it 'should have a zone' do
-    expect(subject.zone).to eq 2
+  it 'gives a default of no_zone if given no station zone' do
+    expect(station.zone).to eq :no_zone
+  end
+
+  it 'gives a station name when a station name given' do
+    expect(station2.name).to eq :ParsonsGreen
+  end
+
+  it 'gives a station zone when a station zone given' do
+    expect(station2.zone).to eq 2
   end
 end
